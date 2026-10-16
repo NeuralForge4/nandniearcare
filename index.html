@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nandani Care – Ear Hospital</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@500;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader">
+  <div class="blob" style="width:260px;height:260px;background:#0d8a85;left:12%;top:18%"></div>
+  <div class="blob" style="width:220px;height:220px;background:#ecad29;right:14%;bottom:16%"></div>
+  <div class="glass"><img src="images/logo.png" alt="Nandani Ear Care"><p>Hear life, beautifully.</p><div class="bar"><i id="lb"></i></div><div class="pct" id="lp">0%</div></div>
+</div>
+
+<nav id="nav">
+  <a class="logo" href="#hero" aria-label="Nandani Ear Care home"><img src="images/logo.png" alt="Nandani Ear Care"></a>
+  <ul><li><a href="#about">About us</a></li><li><a href="#services">Services</a></li><li><a href="#doctors">Doctors</a></li><li><a href="#certificates">Certificates</a></li><li><a href="#contact">Contact</a></li></ul>
+  <a class="btn" href="#contact">Book visit</a>
+</nav>
+
+<header id="hero">
+  <div class="bg" id="bgA"></div><div class="bg" id="bgB"></div><div class="shade"></div>
+  <div class="feat"><img id="fi" alt="Hearing test" src="images/ear-1.jpg"></div>
+  <div class="hbody">
+    <p class="tag">Nandani Care Ear Hospital</p>
+    <div class="place" id="hPlace"></div>
+    <h1 class="big"><span id="hT1"></span><span id="hT2"></span></h1>
+    <p class="hdesc" id="hDesc"></p>
+    <div><a class="btn" href="#contact">Book an ear check</a> <a class="btn o" href="#services" style="margin-left:8px">See services</a></div>
+  </div>
+  <div class="rail" id="rail"></div>
+  <div class="pag"><button class="ar" id="prev" aria-label="Previous">‹</button><button class="ar" id="next" aria-label="Next">›</button><div class="prog"><i id="pg"></i></div><div class="num" id="hn">1</div></div>
+</header>
+
+<div class="strip"><div class="wrap"><span>NABH-style quality standards</span><span>Cashless insurance</span><span>Same-day hearing tests</span><span>Child-friendly ENT care</span><span>Open 7 days</span></div></div>
+
+<section id="about"><div class="wrap">
+  <h2>Ear care that listens first</h2>
+  <p class="lead">Nandani Care is a dedicated ear hospital. We diagnose and treat hearing loss, ear infections, tinnitus and balance problems for children and adults, with clear explanations and fair pricing at every step.</p>
+  <div class="stats">
+    <div class="stat"><b data-n="18">0</b><span>Years of experience</span></div>
+    <div class="stat"><b data-n="45000" data-s="+">0</b><span>Patients treated</span></div>
+    <div class="stat"><b data-n="9000" data-s="+">0</b><span>Ear surgeries</span></div>
+    <div class="stat"><b data-n="96" data-s="%">0</b><span>Patients who recommend us</span></div>
+  </div>
+</div></section>
+
+<section id="certificates" class="alt"><div class="wrap two">
+  <div><h2>Insurance accepted</h2><p class="lead">Cashless treatment with major insurers and government schemes. Our desk handles the paperwork.</p>
+    <div class="chips"><span class="chip">Star Health</span><span class="chip">HDFC ERGO</span><span class="chip">ICICI Lombard</span><span class="chip">Niva Bupa</span><span class="chip">CGHS</span><span class="chip">Ayushman Bharat</span></div></div>
+  <div><h2>Certified &amp; accredited</h2><p class="lead">Our standards are checked, not just claimed.</p>
+    <div class="cert">NABH accreditation</div><div class="cert">ISO 9001:2015 quality management</div><div class="cert">Audiology lab calibrated to national norms</div><div class="cert">Registered ENT surgeons &amp; audiologists</div></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Our main services</h2><p class="lead">Six treatments cover most of what brings people to us.</p>
+  <div class="grid" id="svcs"></div>
+</div></section>
+
+<section class="tech" id="technology"><div class="wrap">
+  <h2>Precision ear technology</h2><p class="lead">Diagnosis and treatment on calibrated, modern equipment.</p>
+  <div class="grid">
+    <div class="tc"><img src="images/ear-1.jpg" alt="Audiometry suite" loading="lazy"><h3>Audiometry suite</h3><p>Pure-tone and speech hearing tests with calibrated headphones.</p></div>
+    <div class="tc"><img src="images/ear-2.jpg" alt="Middle-ear testing" loading="lazy"><h3>Middle-ear testing</h3><p>Probe-based tests with results recorded and graphed on screen.</p></div>
+    <div class="tc"><img src="images/ear-3.jpg" alt="Video otoscopy" loading="lazy"><h3>Video otoscopy</h3><p>See the eardrum on a screen together with your doctor.</p></div>
+    <div class="tc"><img src="images/ear-4.jpg" alt="Operating microscope" loading="lazy"><h3>Operating microscope</h3><p>Magnified, precise ear examination and surgery.</p></div>
+    <div class="tc"><img src="images/ear-5.jpg" alt="Computer-based diagnostics" loading="lazy"><h3>Computer-based diagnostics</h3><p>Objective tests analysed on a monitor beside the patient.</p></div>
+    <div class="tc"><img src="images/ear-6.jpg" alt="Balance assessment suite" loading="lazy"><h3>Balance assessment suite</h3><p>Controlled-motion testing to find the cause of dizziness.</p></div>
+  </div></div></section>
+
+<section id="doctors" class="alt"><div class="wrap">
+  <h2>Meet our doctors</h2><p class="lead">Senior specialists who personally see every new patient.</p>
+  <div class="grid">
+    <div class="doc"><div class="ph"><img src="images/doc-1.jpg" alt="Dr. Anjali Srivastava" loading="lazy"></div><div><h3>Dr. Anjali Srivastava</h3><p>ENT &amp; Ear Surgeon</p><p>MS ENT · 18 years</p></div></div>
+    <div class="doc"><div class="ph"><img src="images/doc-2.jpg" alt="Dr. Rohit Mishra" loading="lazy"></div><div><h3>Dr. Rohit Mishra</h3><p>Cochlear Implant Specialist</p><p>MCh · 14 years</p></div></div>
+    <div class="doc"><div class="ph"><img src="images/doc-3.jpg" alt="Dr. Neha Kapoor" loading="lazy"></div><div><h3>Dr. Neha Kapoor</h3><p>Audiologist &amp; Speech Therapist</p><p>MASLP · 11 years</p></div></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <h2>Why we are different</h2>
+  <div class="why">
+    <div><h3>Ears only</h3><p>Every doctor, machine and nurse here is focused on ears, hearing and balance.</p></div>
+    <div><h3>Answers on the day</h3><p>Hearing test, scan and doctor consultation in a single visit.</p></div>
+    <div><h3>Price before treatment</h3><p>You get a written estimate. No surprise charges at discharge.</p></div>
+    <div><h3>Follow-up that continues</h3><p>Free device tuning and review calls after every treatment.</p></div>
+  </div>
+</div></section>
+
+<section id="reviews" class="alt"><div class="wrap">
+  <h2>What patients say</h2>
+  <div class="grid">
+    <div class="rev"><div class="st">★★★★★</div><p>My father heard his grandchildren clearly for the first time in ten years. The team was patient throughout.</p><small>Sunita R., Lucknow</small></div>
+    <div class="rev"><div class="st">★★★★★</div><p>Our son's surgery was explained step by step. Insurance approval took one afternoon.</p><small>Amit &amp; Priya V.</small></div>
+    <div class="rev"><div class="st">★★★★★</div><p>Years of dizziness finally had a name and a treatment. I am back to walking daily.</p><small>Mohd. Farooq</small></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap two">
+  <div><h2>Book your visit</h2><p class="lead">Call, message or walk in. Emergency ear pain is seen without an appointment.</p>
+    <div class="cbox"><a href="tel:+910000000000">📞 +91 00000 00000</a><a href="https://wa.me/910000000000">💬 WhatsApp us</a><a href="mailto:care@nandanicare.example">✉️ care@nandanicare.example</a><a href="#">🕒 Mon–Sun · 8 am – 8 pm</a></div></div>
+  <div class="map"><svg viewBox="0 0 400 320" role="img" aria-label="Map showing hospital location">
+    <rect width="400" height="320" fill="#cfe3e1"/><path d="M0 220 L400 150" stroke="#fff" stroke-width="18"/><path d="M120 0 L170 320" stroke="#fff" stroke-width="14"/><path d="M0 70 L400 110" stroke="#fff" stroke-width="8"/><path d="M290 0 L250 320" stroke="#fff" stroke-width="8"/><rect x="190" y="40" width="70" height="50" rx="8" fill="#a9d0c0"/>
+    <path d="M205 180c0-20 14-34 14-34s14 14 14 34a14 14 0 01-28 0z" transform="translate(-24 -16) scale(1.7)" fill="#e0462f"/><circle cx="179" cy="143" r="9" fill="#fff"/>
+    <text x="14" y="300" font-family="Inter" font-size="13" fill="#0c2230">Nandani Care · Lucknow (edit address)</text></svg>
+    <div style="padding:14px"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=ear+hospital+Lucknow">Open in Google Maps</a></div></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div><h3>About Nandani Care</h3><p>Nandani Care is an ear hospital built around one idea: everyone deserves to hear and balance well. We combine specialist surgeons, audiologists and speech therapists under one roof, with honest pricing and long-term follow-up.</p></div>
+  <div><h3>Visit</h3><p>Lucknow, Uttar Pradesh</p><p>Open daily 8 am – 8 pm</p></div>
+</div><div class="wrap made" style="display:flex"><span>© 2026 Nandani Care. All rights reserved.</span><span>Made by <b style="color:#ecad29">KYRUS</b></span></div></footer>
+
+
+<div id="sp"></div>
+<button id="up" aria-label="Back to top"><svg viewBox="0 0 48 48"><circle class="rt" cx="24" cy="24" r="20"/><circle class="rg" cx="24" cy="24" r="20"/></svg><span id="upn">0</span></button>
+<button id="cbBtn" aria-label="Open chat assistant" aria-expanded="false"><img src="images/logo-icon.png" alt=""><span class="bd"></span></button>
+<div id="cb" role="dialog" aria-label="Nandani Ear Care assistant">
+  <header><div class="hd"><img class="av" src="images/logo-icon.png" alt="Nandani Ear Care"><div><b>Nandani Assistant</b><small>Ask about timings, services and booking</small></div></div><button id="cbX" aria-label="Close chat">✕</button></header>
+  <div id="cbm" role="log" aria-live="polite"></div>
+  <div id="cbq"></div>
+  <div class="cbf"><input id="cbi" placeholder="Type your question…" aria-label="Your question" autocomplete="off"><button id="cbs" aria-label="Send">➤</button></div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
